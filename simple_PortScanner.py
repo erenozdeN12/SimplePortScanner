@@ -29,7 +29,7 @@ try:
          
         result = s.connect_ex((target,port))
         if result ==0:
-            print("{} Numaralı Port Açık".format(port), "Banner = {}".format(s.recv(1024).decode()))
+            print("[{}] Numaralı Port Açık".format(port), "Banner = {}".format(s.recv(1024).decode()))
         s.close()
          
 except KeyboardInterrupt:
